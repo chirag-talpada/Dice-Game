@@ -195,11 +195,11 @@ function holdScore() {
   changePlayerTurn(userInfo.flag);
   sendHoldScore(userInfo.flag);
 
-  if (userScore.xScore >= 10) {
+  if (userScore.xScore >= 100) {
     Winning(1);
   }
 
-  if (userScore.yScore >= 10) {
+  if (userScore.yScore >= 100) {
     Winning(2);
   }
 }
