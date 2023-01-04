@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/dice.png">
+
+</head>
+
+<body>
+    <div class="copyright"><span>&copy;</span>&nbsp;chiragtalpada</div>
+    <div class="roomname hidden"></div>
+    <div class="overlay"></div>
+    <div class="model leftmodel">
+        <h1>Player Left 🙄😕</h1>
+        <p style="text-align: center;"><button onclick="restartGame()" class="rstbtn">Restart</button></p>
+    </div>
+    <div class="model result">
+        <h1>🏆🎉🎊 Winner 🎊🎉🏆</h1>
+        <h3>😍 Chirag 😍</h3>
+        <hr>
+        <br>
+        <p class="xlabel">kartik : 89</p>
+        <p class="ylabel">Chirag : 103</p>
+        <div class="winMsg">You won by 24 Score</div>
+        <p style="text-align: center;"><button onclick="restartGame()" class="rstbtn">Restart</button></p>
+    </div>
+    <section>
+        <div class="middlePanel">
+            <div class="dicePanel centerFlex">
+                <div class="dicediv"></div>
+            </div>
+            <div><button id="rollbtn" onclick="onRoll()" class="btn"><img src="./img/dice.png" />ROLL DICE</button>
+            </div>
+            <div><button id="holdbtn" onclick="holdScore()" class="btn"><img
+                        style="height: 1.7rem;top: 1rem;left: 2.4rem;opacity: 0.8;" src="./img/hold.png" />HOLD</button>
+            </div>
+        </div>
+        <div class="playerXzone zone">
+            <div class="upperPart">
+                <h2>PLAYER 1</h2>
+                <h1>0</h1>
+            </div>
+            <div class="lowerPart">
+                <div class="pointPart">
+                    <p>CURRENT</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="playerYzone zone">
+            <div class="upperPart">
+                <h2>PLAYER 2</h2>
+                <h1>0</h1>
+            </div>
+            <div class="lowerPart">
+                <div class="pointPart">
+                    <p>CURRENT</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/871cd35729.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

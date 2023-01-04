@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #d98899;
+}
+
+.roomname {
+  position: absolute;
+  top: 1.5rem;
+  font-size: 1.5rem;
+  color: #d98899;
+}
+
+.hidden {
+  display: none;
+}
+
+.copyright span {
+  position: relative;
+  top: 0.05rem;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  display: none;
+}
+
+.model {
+  position: absolute;
+  z-index: 5;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  animation: popout 0.3s ease-in-out 1;
+}
+
+.result {
+  display: none;
+}
+
+.leftmodel {
+  display: none;
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.model h1 {
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.model h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.model div {
+  text-align: center;
+  padding: 2rem;
+  background-color: lightgray;
+  margin-top: 2rem;
+}
+
+.rstbtn {
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  outline: none;
+  background-image: linear-gradient(to top left, #63f3e6, #1ef5ff, #52f2f5);
+  color: white;
+  border-radius: 4rem;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.upperPart {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.upperPart h2 {
+  font-size: 2.2rem;
+}
+
+.lowerPart {
+  padding: 2rem;
+  text-align: center;
+}
+
+.upperPart h1 {
+  color: #c7365f;
+  font-size: 4.5rem;
+}
+
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointPart {
+  background-color: #c7365f;
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.pointPart p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+}
+
+.pointPart h2 {
+  font-weight: lighter;
+}
+
+.zone {
+  padding: 3rem 7rem;
+}
+
+.playerXzone {
+  padding-right: 10rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.playerYzone {
+  padding-left: 10rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.middlePanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+}
+
+.middlePanel img {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.8rem;
+  height: 2.6rem;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3a3a3a;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.dicePanel {
+  margin-top: 12rem;
+  margin-bottom: 5.6rem;
+  position: relative;
+}
+
+.dicePanel .dicediv {
+  width: 6rem;
+  height: 6rem;
+  background-image: url("./img/five.png");
+  background-size: cover;
+}
+
+.addBlink {
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 38%;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 35%;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  html {
+    font-size: 29%;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  html {
+    font-size: 26%;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
