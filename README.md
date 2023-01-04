@@ -15,7 +15,7 @@ A multiplayer online dice game using Node js, Socket.io, Express and vanilla Jav
 - You can roll the dice by clicking the '**ROLL DICE**' button.
 - You can hold your current score by '**HOLD**' button.
 
-(**These buttons are disabled when it is your opponent's turn**)
+(**Note : These buttons are disabled when it is your opponent's turn**)
 
 ## Game Rules 🎲📝
 - You can roll the dice as many times as you want. each time, the number that comes up on the dice will be added to your current score.
@@ -23,3 +23,5 @@ A multiplayer online dice game using Node js, Socket.io, Express and vanilla Jav
 ### But here is the twist 😅👇👇
 - **If you roll a 1 on the dice, your turn will end and your current score will be reset to 0 without being added to your overall score.**
 
+## Winning Condition 🎉🎊🥳
+- **The first player who reaches an overall score of 100 wins the game.**
