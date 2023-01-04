@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const publicPath = path.join(__dirname, "public");
 
-const hostname = "0.0.0.0";
+//const hostname = "0.0.0.0";
 
 roomAdmins = [];
 
@@ -14,7 +14,7 @@ app.get("", (req, res) => {
   res.send(`${publicPath}/index.html`);
 });
 
-const server = app.listen(5000, hostname, () =>
+const server = app.listen(5000, () =>
   console.log(`Running in port 5000`)
 );
 
