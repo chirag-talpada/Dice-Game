@@ -278,7 +278,7 @@ function Winning(flag) {
 
   let winMsg = `You won by ${WonBy} Score`;
 
-  document.querySelector(".model h1").innerText = label;
+  document.querySelector(".result h1").innerText = label;
   document.querySelector(".model h3").innerText = `😍 ${WinnerName} 😍`;
   document.querySelector(".model .xlabel").innerText = xLabel;
   document.querySelector(".model .ylabel").innerText = yLabel;
@@ -312,7 +312,7 @@ function losing(flag) {
 
   let winMsg = `You lost by ${LostBy} Score`;
 
-  document.querySelector(".model h1").innerText = label;
+  document.querySelector(".result h1").innerText = label;
   document.querySelector(".model h3").innerText = `😭 ${losserName} 😭`;
   document.querySelector(".model .xlabel").innerText = xLabel;
   document.querySelector(".model .ylabel").innerText = yLabel;
