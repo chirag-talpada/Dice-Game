@@ -25,3 +25,5 @@ A multiplayer online dice game using Node js, Socket.io, Express and vanilla Jav
 
 ## Winning Condition 🎉🎊🥳
 - **The first player who reaches an overall score of 100 wins the game.**
+
+### Live demo : https://dice-game-chirag.onrender.com
