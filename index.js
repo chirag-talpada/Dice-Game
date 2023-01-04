@@ -4,6 +4,8 @@ const app = express();
 const path = require("path");
 const publicPath = path.join(__dirname, "public");
 
+const hostname = "0.0.0.0";
+
 roomAdmins = [];
 
 app.use(express.static(publicPath));
@@ -12,7 +14,9 @@ app.get("", (req, res) => {
   res.send(`${publicPath}/index.html`);
 });
 
-const server = app.listen(5000, () => console.log(`Running in port 5000`));
+const server = app.listen(5000, hostname, () =>
+  console.log(`Running in port 5000`)
+);
 
 const io = require("socket.io")(server);
 
